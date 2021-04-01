@@ -1,0 +1,9 @@
+.nav {
+    grid-area: n;
+    background-color: bisque; 
+    font-size: 20px;
+    color:white;
+  }
+.nav.active{
+  color:gold;
+}

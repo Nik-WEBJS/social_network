@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import './App.css';
-import Header from './components/Header'
-import Nav from './components/Nav'
-import Profile from './components/Profile'
+import Header from './components/Header.jsx'
+import Nav from './components/Nav.jsx'
+import Profile from './components/Profile.jsx'
 
 
 const App = () => {
