@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
+import MyPosts from './MyPosts/MyPosts.jsx';
 import classes from'./Profile.module.css'
 
 
@@ -13,20 +14,7 @@ const Profile = () => {
             <div>
                 ava + desription
             </div>
-            <div>
-                my post
-            </div>
-            <div>
-                new post
-            </div>
-            <div className={classes.posts}>
-            <div className={classes.posts__item}>
-                post 1
-            </div>
-            <div className={classes.posts__item}>
-                post 2
-            </div>
-            </div>
+            <MyPosts />
         </div>
     )
 }
