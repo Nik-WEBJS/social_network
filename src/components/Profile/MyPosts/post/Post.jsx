@@ -4,13 +4,13 @@ import React from 'react';
 import classes from './Post.module.css'
 
 
-const Post = () => {
+const Post = (props) => {
     return (
         <div className={classes.item}>
             <img src='https://www.blast.hk/attachments/64805/' />
-                post 1
+                {props.message}
             <div>
-                <span>like</span>
+                <span>like</span> {props.likes}
             </div>
         </div>
     )
