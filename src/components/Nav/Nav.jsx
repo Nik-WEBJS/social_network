@@ -5,14 +5,14 @@ import classes from './Nav.module.css';
 
 
 const Nav = () => {
-    return  (<nav className={classes.nav}>
-            <div clasName={classes.nav__item}> <a>Profile</a> </div>
-            <div clasName={classes.nav__item}> <a>Messages</a>  </div>
-            <div clasName={classes.nav__item}> <a>News</a>  </div>
-            <div clasName={classes.nav__item}> <a>Music</a>  </div>
-            <div clasName={classes.nav__item}> <a>Setting</a>  </div>
-         
-            </nav>
+    return (<nav className={classes.nav}>
+        <div> <a href='/Profile'>Profile</a> </div>
+        <div> <a href='/Dialogs'>Messages</a>  </div>
+        <div> <a href='/News'>News</a>  </div>
+        <div> <a href='/Music'>Music</a>  </div>
+        <div> <a href='/Settings'>Settings</a>  </div>
+
+    </nav>
     )
 }
 
