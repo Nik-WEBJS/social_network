@@ -2,16 +2,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import classes from './Nav.module.css';
+import { NavLink } from 'react-router-dom';
 
 
 const Nav = () => {
     return (<nav className={classes.nav}>
-        <div> <a href='/Profile'>Profile</a> </div>
-        <div> <a href='/Dialogs'>Messages</a>  </div>
-        <div> <a href='/News'>News</a>  </div>
-        <div> <a href='/Music'>Music</a>  </div>
-        <div> <a href='/Settings'>Settings</a>  </div>
-
+            <div className={classes.item}> <NavLink to='/Profile' activeClassName={classes.active}>Profile</NavLink> </div>
+            <div className={classes.item}> <NavLink to='/Dialogs' activeClassName={classes.active}>Messages</NavLink>  </div>
+            <div className={classes.item}> <NavLink to='/News' activeClassName={classes.active}>News</NavLink>  </div>
+            <div className={classes.item}> <NavLink to='/Music' activeClassName={classes.active}>Music</NavLink>  </div>
+            <div className={classes.item}> <NavLink to='/Settings' activeClassName={classes.active}>Settings</NavLink>  </div>
     </nav>
     )
 }

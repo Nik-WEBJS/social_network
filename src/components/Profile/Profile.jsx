@@ -3,17 +3,13 @@
 import React from 'react';
 import MyPosts from './MyPosts/MyPosts.jsx';
 import classes from'./Profile.module.css'
+import ProfileInfo from './ProfileInfo/ProfileInfo.jsx'
 
 
 const Profile = () => {
     return (
         <div>
-            <div>
-                <img className={classes.img_fon} src='https://filedn.com/ltOdFv1aqz1YIFhf4gTY8D7/ingus-info/BLOGS/Photography-stocks3/stock-photography-slider.jpg' />
-            </div>
-            <div>
-                ava + desription
-            </div>
+            <ProfileInfo />
             <MyPosts />
         </div>
     )

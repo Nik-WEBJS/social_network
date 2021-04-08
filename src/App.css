@@ -17,5 +17,6 @@
 
 .app-wrapper-content {
   grid-area: m;
-  background-color: coral;
+  background-color: #edeef0;
+  border-radius: 30px;
 }

@@ -6,21 +6,19 @@ import classes from './MyPosts.module.css'
 
 
 const MyPosts = () => {
-    return (<div >
-        <div>
-            my post
+    return (
+
+        <div className={classes.my_post_item}>
+           <h2>my post</h2> 
+            <div >
+              <div><textarea></textarea></div>  
+              <div> <button>Add posts</button></div> 
             </div>
-        <div >
-            <textarea></textarea>
-            <button>Add posts</button>
-            <button>Remove</button>
+            <div className={classes.posts}>
+                <Post message='Hi you' likes='15' />
+                <Post message='firts' />
             </div>
-        <div className={classes.posts}>
-           <Post message='Hi you' likes='15'/>
-           <Post message='firts'/>
-           
         </div>
-    </div>
 
     )
 }
