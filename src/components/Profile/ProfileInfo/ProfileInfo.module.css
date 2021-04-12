@@ -1,5 +1,7 @@
 .img_fon{
+    margin-top: 20px;
     width: 900px;
+    border-radius: 30px;
   }
 .description_block{
     padding: 10px;
