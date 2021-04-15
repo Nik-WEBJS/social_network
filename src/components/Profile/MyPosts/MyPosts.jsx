@@ -5,12 +5,11 @@ import Post from './post/Post.jsx'
 import classes from './MyPosts.module.css'
 
 
-const MyPosts = () => {
+const MyPosts = (props) => {
 
-    let postData = [
-        {id:1, message: 'Hi you', likesCount: 12},
-        {id:2, message: 'firts', likesCount: 3} ,
-    ]
+    
+    let postsElement = props.posts.map(p => <Post message={p.message} likesCount={p.likesCount}/>)
+
 
     return (
         <div className={classes.my_post_item}>
@@ -20,8 +19,7 @@ const MyPosts = () => {
               <div> <button>Add posts</button></div> 
             </div>
             <div className={classes.posts}>
-                <Post message={postData[0].message} likes={postData[0].likesCount} />
-                <Post message={postData[1].message} likes={postData[1].likesCount} />
+                { postsElement }
             </div>
         </div>
 

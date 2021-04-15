@@ -10,7 +10,7 @@ const Post = (props) => {
             <img src='https://www.blast.hk/attachments/64805/' />
                 {props.message}
             <div>
-                <span>like</span> {props.likes}
+                <span>like 1</span> {props.likes}
             </div>
         </div>
     )
